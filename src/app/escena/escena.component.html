@@ -1,0 +1,13 @@
+<img [src]="mostrarImatge()" alt="txtImatge()" id="imatgeFons">
+
+<div id="btn-grup">
+    <button class="botons"  (click)="prev()">Anterior</button>
+    <button class="botons"  (click)="next()">Següent</button>
+</div>
+
+<ul>
+    <li class="historia" *ngFor="let historia of arrHistoria; let i = index"
+        [ngClass]="{'fonsVermell': currentSentence == i}">
+        {{historia}}
+    </li>
+</ul>

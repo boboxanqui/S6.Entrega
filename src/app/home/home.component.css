@@ -1,0 +1,23 @@
+#benvinguda{
+    text-align: center;
+}
+
+#benvinguda > *{
+    margin: 20px;
+}
+
+#btn-començar {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* BACKGROUND */
+
+#imatgeFons {
+    position: absolute;
+    z-index: -1;
+    min-width: 100vw;
+    min-height: 100vh;
+    top: 0px;
+    filter: blur(10px) opacity(50%);
+}

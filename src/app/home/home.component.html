@@ -1,0 +1,11 @@
+<img [src]="llistatTxtImg[0].img" alt="" id="imatgeFons">
+
+<div *ngIf="benvinguda; else escena" id="benvinguda">
+    <h1>Benvingut/da!</h1>
+    <h2>Estàs a punt de començar una trepidant historia d'herois.</h2>
+    <button (click)="acabarBenvinguda()" id="btn-començar">Començar</button>
+</div>
+
+<ng-template #escena>
+    <app-escena [arrHistoria]="historia"></app-escena>
+</ng-template>
